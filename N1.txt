@@ -1,0 +1,158 @@
+1️⃣ What is Emmet?
+
+Emmet is a tool in code editors that helps you write HTML & CSS faster using shortcuts.
+
+Example:
+
+Instead of writing:
+
+<div>
+  <p></p>
+</div>
+
+
+You type:
+
+div>p
+
+
+👉 Press Tab → Code appears automatically.
+
+🔹 Why use Emmet?
+
+Saves time
+
+Reduces typing
+
+Increases speed & productivity
+
+2️⃣ Difference between Library and Framework
+Library	Framework
+You control the flow	Framework controls the flow
+You call the library	Framework calls your code
+Example: React	Example: Angular
+
+👉 Simple line:
+
+A library is like a helper you call when needed.
+A framework is like a boss that tells your code when to run.
+
+3️⃣ What is CDN? Why do we use it?
+
+CDN (Content Delivery Network) is a network of servers placed around the world that deliver files (JS, CSS, images) from the nearest location to the user.
+
+Why we use CDN:
+
+Faster website loading 🚀
+
+Less load on main server
+
+Better performance & reliability
+
+Example:
+<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+
+
+React is loaded from a CDN, not your server.
+
+4️⃣ Why is React known as React?
+
+React is called React because it reacts to changes in data.
+
+👉 When data changes:
+
+React updates only the required part of UI
+
+Not the whole page
+
+This makes apps fast and efficient.
+
+5️⃣ What is crossorigin in <script> tag?
+
+crossorigin allows a browser to load files from another domain safely.
+
+Example:
+<script src="https://example.com/script.js" crossorigin></script>
+
+Why it is used:
+
+Prevents security issues
+
+Helps with proper error handling
+
+Required when using CDNs
+
+6️⃣ Difference between React and ReactDOM
+React	ReactDOM
+Builds UI components	Renders UI to the browser
+Logic & components	Works with DOM
+Platform independent	Browser specific
+
+👉 Simple line:
+
+React creates components.
+ReactDOM puts them on the webpage.
+
+7️⃣ Difference between
+react.development.js and react.production.js
+Development	Production
+Large file	Small & optimized
+Shows warnings & errors	No warnings
+Slower	Faster
+Used while coding	Used after deployment
+
+👉 Simple line:
+
+Use development for learning & debugging.
+Use production for live websites.
+
+8️⃣ What is async and defer?
+
+Both are used to load JS files without blocking HTML loading.
+
+Normal script:
+
+HTML stops until JS loads
+
+async
+
+Loads JS and runs it immediately
+
+Order not guaranteed
+
+<script src="file.js" async></script>
+
+defer
+
+Loads JS in background
+
+Runs after HTML is fully loaded
+
+Order is maintained
+
+<script src="file.js" defer></script>
+
+
+👉 Simple rule to remember:
+
+async → fast but unpredictable
+
+defer → safe and ordered (best for most cases)
+
+📌 One-line Revision (Cheat Sheet)
+
+Emmet → Fast coding shortcuts
+
+Library vs Framework → You control vs Framework controls
+
+CDN → Faster content delivery
+
+React → Reacts to data changes
+
+crossorigin → Secure cross-domain loading
+
+React vs ReactDOM → Create vs Render
+
+Dev vs Prod React → Debug vs Fast
+
+async vs defer → Unordered vs Ordered loading
