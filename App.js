@@ -1,31 +1,42 @@
-const header = React.createElement(
-    "div",
-    { className: "title" },
-    [
-      React.createElement("h1", { key: "h1" }, "Welcome to React"),
-      React.createElement("h2", { key: "h2" }, "Learning React is fun!"),
-      React.createElement("h3", { key: "h3" }, "Let's build something awesome."),
-    ]
-  );
-  
-  const HeaderJSX = () => (
-    <div className="title">
-      <h1>Welcome to React</h1>
-      <h2>Learning React is fun!</h2>
-      <h3>Let's build something awesome.</h3>
-    </div>
-  );
-  
-  const TitleComponent = () => (
-    <h1 className="title">Hello, React!</h1>
-  );
-  
-  const HeadingComponent = () => (
-    <div>
-      <TitleComponent />
-      <HeaderJSX />
-    </div>
-  );
-  
-  root.render(<HeadingComponent />);
-  
+import React from "react";
+import ReactDOM from "react-dom/client";
+import "./styles.css";
+const Logo = () => {
+    return (
+        <img 
+            src="https://example.com/logo.png" 
+            alt="App Logo" 
+        />
+    );
+}
+
+const SearchBar = () => {
+    return (
+        <input 
+            type="text" 
+            placeholder="Search..." 
+        />
+    );
+}
+
+const UserIcon = () => {
+    return (
+        <img 
+            src="https://example.com/user-icon.png" 
+            alt="User Icon" 
+        />
+    );
+}
+const Header = () => {
+    return (
+        <div className="header">
+            <Logo />
+            <SearchBar />
+            <UserIcon />
+            <h1>Welcome to Our Application</h1>
+        </div>
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Header />);
